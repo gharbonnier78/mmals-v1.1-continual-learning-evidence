@@ -6,6 +6,9 @@ This repository packages the June 12, 2026 status article for Mycelium-Inspired 
   <a href="./paper/main.pdf">
     <img src="https://img.shields.io/badge/Open-Article-0B5FFF?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Open PDF">
   </a>
+  <a href=".//docs/MMALS_Section4_Experiments_v4.docx">
+    <img src="https://img.shields.io/badge/Open-Section4-0B5FFF?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Open DOCX">
+  </a>
 </p>
 
 ## Scope
