@@ -2,6 +2,12 @@
 
 This repository packages the June 12, 2026 status article for Mycelium-Inspired Mutualistic Adaptive Learning Systems (MMALS).
 
+<p align="center">
+  <a href="./paper/main.pdf">
+    <img src="https://img.shields.io/badge/Open-Article-0B5FFF?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Open PDF">
+  </a>
+</p>
+
 ## Scope
 
 The paper consolidates:
