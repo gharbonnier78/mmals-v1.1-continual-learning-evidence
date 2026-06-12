@@ -1,0 +1,10 @@
+\begin{tabularx}{\linewidth}{@{}p{0.28\linewidth} p{0.30\linewidth} X@{}}
+\toprule
+Evidence & Supported statement & Unsupported extrapolation \\
+\midrule
+SplitCIFAR10 robust & RC2O substantially outperforms validation-selected replay with low forgetting and no class collapse over frozen A1 features. & End-to-end raw-pixel continual representation learning or CIFAR state of the art. \\
+SplitCIFAR100 robust diagnostic & RC2O has a large paired advantage over replay. & Full qualification, because representation and joint-control floors remain weak. \\
+CORe50 robust diagnostic & The external pipeline transfers and yields a modest positive paired gain in every seed. & Strong retention, standard CORe50 NC/NIC comparability, or proven host specialization. \\
+CORe50 v2.3 rescue & Combined representation, replay, readout and host changes reduce zero-recall classes, forgetting and host collapse. & Attribution to context EMA or successful oldest-context retention. \\
+\bottomrule
+\end{tabularx}

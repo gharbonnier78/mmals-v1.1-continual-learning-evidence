@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this research package, please cite the status article."
+title: "MMALS v1.1: From Functional-Memory Diagnostics to External Continual-Learning Evidence"
+type: article
+authors:
+  - family-names: Harbonnier
+    given-names: Guillaume
+year: 2026
+version: "1.1-status-2026-06-12"

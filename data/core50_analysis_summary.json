@@ -1,0 +1,438 @@
+{
+  "dataset": "CORe50",
+  "protocol": "custom object-level class-incremental 10 tasks x 5 classes",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "claim_status": "positive diagnostic robust evidence; not qualification",
+  "key_methods": [
+    {
+      "label": "Selected RC2O",
+      "method": "paired_rc2o_v1_feature_only_regime_hard_selector_policy",
+      "final_avg_acc_mean": 0.3149,
+      "final_avg_acc_std": 0.0345457124691328,
+      "min_task_acc_mean": 0.0145999999999999,
+      "avg_forgetting_mean": 0.1672777777777778,
+      "min_class_acc_mean": 0.0
+    },
+    {
+      "label": "Safe balanced readout",
+      "method": "paired_context_gap_safe_class_balanced_readout_calibrated",
+      "final_avg_acc_mean": 0.3149,
+      "final_avg_acc_std": 0.0345457124691328,
+      "min_task_acc_mean": 0.0145999999999999,
+      "avg_forgetting_mean": 0.1661222222222222,
+      "min_class_acc_mean": 0.0
+    },
+    {
+      "label": "RC1b context-gap",
+      "method": "paired_context_gap_selected",
+      "final_avg_acc_mean": 0.31084,
+      "final_avg_acc_std": 0.0399346716525878,
+      "min_task_acc_mean": 0.0129,
+      "avg_forgetting_mean": 0.1699555555555555,
+      "min_class_acc_mean": 0.0
+    },
+    {
+      "label": "Best replay",
+      "method": "baseline_balanced_replay",
+      "final_avg_acc_mean": 0.27961,
+      "final_avg_acc_std": 0.0125179071733257,
+      "min_task_acc_mean": 0.0527,
+      "avg_forgetting_mean": 0.1789111111111111,
+      "min_class_acc_mean": 0.0005
+    },
+    {
+      "label": "Joint MLP control",
+      "method": "baseline_joint_upper_bound",
+      "final_avg_acc_mean": 0.25083,
+      "final_avg_acc_std": 0.0097500384614626,
+      "min_task_acc_mean": 0.0602,
+      "avg_forgetting_mean": 0.0,
+      "min_class_acc_mean": 0.0025
+    },
+    {
+      "label": "ZF oracle probe",
+      "method": "probe_proto__zf_oracle",
+      "final_avg_acc_mean": 0.36305,
+      "final_avg_acc_std": 0.0453628013905667,
+      "min_task_acc_mean": 0.1296,
+      "avg_forgetting_mean": NaN,
+      "min_class_acc_mean": 0.007
+    },
+    {
+      "label": "ZF proto probe",
+      "method": "probe_proto__zf_proto",
+      "final_avg_acc_mean": 0.28967,
+      "final_avg_acc_std": 0.0220574420547805,
+      "min_task_acc_mean": 0.0116999999999999,
+      "avg_forgetting_mean": NaN,
+      "min_class_acc_mean": 0.0005
+    },
+    {
+      "label": "LwF",
+      "method": "baseline_lwf",
+      "final_avg_acc_mean": 0.11431,
+      "final_avg_acc_std": 0.0123838301829442,
+      "min_task_acc_mean": 0.0,
+      "avg_forgetting_mean": 0.2527333333333333,
+      "min_class_acc_mean": 0.0
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "comparison": "Oracle probe - Selected RC2O",
+      "mean_delta": 0.048150000000000005,
+      "ci95_low": 0.004527196399232415,
+      "ci95_high": 0.09177280360076759
+    },
+    {
+      "comparison": "Selected RC2O - RC1b context-gap",
+      "mean_delta": 0.004060000000000008,
+      "ci95_low": -0.008695446308109398,
+      "ci95_high": 0.016815446308109414
+    },
+    {
+      "comparison": "Selected RC2O - joint MLP control",
+      "mean_delta": 0.06406999999999999,
+      "ci95_low": 0.0289647747736188,
+      "ci95_high": 0.09917522522638117
+    },
+    {
+      "comparison": "Selected RC2O - replay",
+      "mean_delta": 0.03529,
+      "ci95_low": 0.0029176025557092755,
+      "ci95_high": 0.06766239744429073
+    }
+  ],
+  "final_taskwise": [
+    {
+      "label": "Best replay",
+      "task_id": 0,
+      "acc_mean": 0.052700000000000004,
+      "acc_std": 0.012661950876543475
+    },
+    {
+      "label": "Best replay",
+      "task_id": 1,
+      "acc_mean": 0.0975,
+      "acc_std": 0.009089829481348921
+    },
+    {
+      "label": "Best replay",
+      "task_id": 2,
+      "acc_mean": 0.22350000000000003,
+      "acc_std": 0.029238245501397662
+    },
+    {
+      "label": "Best replay",
+      "task_id": 3,
+      "acc_mean": 0.11879999999999999,
+      "acc_std": 0.0225349728200413
+    },
+    {
+      "label": "Best replay",
+      "task_id": 4,
+      "acc_mean": 0.24889999999999998,
+      "acc_std": 0.026564544039000562
+    },
+    {
+      "label": "Best replay",
+      "task_id": 5,
+      "acc_mean": 0.195,
+      "acc_std": 0.021803096110415154
+    },
+    {
+      "label": "Best replay",
+      "task_id": 6,
+      "acc_mean": 0.5585,
+      "acc_std": 0.022860992979308655
+    },
+    {
+      "label": "Best replay",
+      "task_id": 7,
+      "acc_mean": 0.5416000000000001,
+      "acc_std": 0.04078510757617293
+    },
+    {
+      "label": "Best replay",
+      "task_id": 8,
+      "acc_mean": 0.3573,
+      "acc_std": 0.05525463781439528
+    },
+    {
+      "label": "Best replay",
+      "task_id": 9,
+      "acc_mean": 0.4023,
+      "acc_std": 0.025210612844593833
+    },
+    {
+      "label": "Selected RC2O",
+      "task_id": 0,
+      "acc_mean": 0.040999999999999995,
+      "acc_std": 0.02639128644079329
+    },
+    {
+      "label": "Selected RC2O",
+      "task_id": 1,
+      "acc_mean": 0.027499999999999997,
+      "acc_std": 0.05101347861104945
+    },
+    {
+      "label": "Selected RC2O",
+      "task_id": 2,
+      "acc_mean": 0.2411,
+      "acc_std": 0.1357172612455763
+    },
+    {
+      "label": "Selected RC2O",
+      "task_id": 3,
+      "acc_mean": 0.12190000000000001,
+      "acc_std": 0.08614261430906309
+    },
+    {
+      "label": "Selected RC2O",
+      "task_id": 4,
+      "acc_mean": 0.3548,
+      "acc_std": 0.044533133732087615
+    },
+    {
+      "label": "Selected RC2O",
+      "task_id": 5,
+      "acc_mean": 0.2786,
+      "acc_std": 0.05781911448647408
+    },
+    {
+      "label": "Selected RC2O",
+      "task_id": 6,
+      "acc_mean": 0.6423,
+      "acc_std": 0.06279589954766156
+    },
+    {
+      "label": "Selected RC2O",
+      "task_id": 7,
+      "acc_mean": 0.6035999999999999,
+      "acc_std": 0.026142398512760862
+    },
+    {
+      "label": "Selected RC2O",
+      "task_id": 8,
+      "acc_mean": 0.42989999999999995,
+      "acc_std": 0.07597483135881249
+    },
+    {
+      "label": "Selected RC2O",
+      "task_id": 9,
+      "acc_mean": 0.4083,
+      "acc_std": 0.02882837144203606
+    },
+    {
+      "label": "ZF oracle probe",
+      "task_id": 0,
+      "acc_mean": 0.1332,
+      "acc_std": 0.051091339774955995
+    },
+    {
+      "label": "ZF oracle probe",
+      "task_id": 1,
+      "acc_mean": 0.2677,
+      "acc_std": 0.0766743112130784
+    },
+    {
+      "label": "ZF oracle probe",
+      "task_id": 2,
+      "acc_mean": 0.3256,
+      "acc_std": 0.04965933950426647
+    },
+    {
+      "label": "ZF oracle probe",
+      "task_id": 3,
+      "acc_mean": 0.1895,
+      "acc_std": 0.05432080632685784
+    },
+    {
+      "label": "ZF oracle probe",
+      "task_id": 4,
+      "acc_mean": 0.4232,
+      "acc_std": 0.07385340208819088
+    },
+    {
+      "label": "ZF oracle probe",
+      "task_id": 5,
+      "acc_mean": 0.28650000000000003,
+      "acc_std": 0.06285001988862055
+    },
+    {
+      "label": "ZF oracle probe",
+      "task_id": 6,
+      "acc_mean": 0.6243000000000001,
+      "acc_std": 0.05871286060140489
+    },
+    {
+      "label": "ZF oracle probe",
+      "task_id": 7,
+      "acc_mean": 0.598,
+      "acc_std": 0.03635759893062247
+    },
+    {
+      "label": "ZF oracle probe",
+      "task_id": 8,
+      "acc_mean": 0.4133,
+      "acc_std": 0.07276468923866851
+    },
+    {
+      "label": "ZF oracle probe",
+      "task_id": 9,
+      "acc_mean": 0.36920000000000003,
+      "acc_std": 0.039891415116538556
+    }
+  ],
+  "route_seed_summary": [
+    {
+      "seed": 0,
+      "effective_hosts_from_mean_route": 2.0286460161209106
+    },
+    {
+      "seed": 1,
+      "effective_hosts_from_mean_route": 2.660708725452423
+    },
+    {
+      "seed": 2,
+      "effective_hosts_from_mean_route": 2.4022438645362856
+    },
+    {
+      "seed": 3,
+      "effective_hosts_from_mean_route": 3.221500372886658
+    },
+    {
+      "seed": 4,
+      "effective_hosts_from_mean_route": 1.0000000238418578
+    }
+  ],
+  "lsa_seed_summary": [
+    {
+      "seed": 0,
+      "mean_lsa_cosine": 0.8449375476709748,
+      "mean_lsa_pearson": 0.7070839197182045,
+      "suspicious_rate": 0.36664893617021277
+    },
+    {
+      "seed": 1,
+      "mean_lsa_cosine": 0.8224371667046008,
+      "mean_lsa_pearson": 0.7105422709696161,
+      "suspicious_rate": 0.35132978723404257
+    },
+    {
+      "seed": 2,
+      "mean_lsa_cosine": 0.8222701874806815,
+      "mean_lsa_pearson": 0.6809732838547796,
+      "suspicious_rate": 0.35382978723404257
+    },
+    {
+      "seed": 3,
+      "mean_lsa_cosine": 0.8519008195852702,
+      "mean_lsa_pearson": 0.7776179570981552,
+      "suspicious_rate": 0.38941489361702125
+    },
+    {
+      "seed": 4,
+      "mean_lsa_cosine": 0.9999956935298091,
+      "mean_lsa_pearson": 0.9999859434537222,
+      "suspicious_rate": 0.36180851063829783
+    }
+  ],
+  "energy_probe": [
+    {
+      "seed": 0,
+      "energy_probe_version": "RC2jh_energy_context_probe_audit_v1",
+      "run_mode": "robust",
+      "dataset_name": "CORe50",
+      "n_probe_samples": 40,
+      "oracle_hit_rate": 1.0,
+      "median_final_context_gap": 0.3149847239255905,
+      "mean_final_context_gap": 0.4010683387517929,
+      "median_gap_ratio_vs_target": 10.861542204330709,
+      "mean_energy_drop": 15.013458963483572,
+      "plateau_rate": 0.0,
+      "wrong_context_rate": 0.0,
+      "divergence_rate": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "seed": 1,
+      "energy_probe_version": "RC2jh_energy_context_probe_audit_v1",
+      "run_mode": "robust",
+      "dataset_name": "CORe50",
+      "n_probe_samples": 40,
+      "oracle_hit_rate": 1.0,
+      "median_final_context_gap": 0.3333968967199325,
+      "mean_final_context_gap": 0.3514722514897584,
+      "median_gap_ratio_vs_target": 11.496444714480432,
+      "mean_energy_drop": 14.848498145118356,
+      "plateau_rate": 0.0,
+      "wrong_context_rate": 0.0,
+      "divergence_rate": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "seed": 2,
+      "energy_probe_version": "RC2jh_energy_context_probe_audit_v1",
+      "run_mode": "robust",
+      "dataset_name": "CORe50",
+      "n_probe_samples": 40,
+      "oracle_hit_rate": 1.0,
+      "median_final_context_gap": 0.3329525887966156,
+      "mean_final_context_gap": 0.3549517016857862,
+      "median_gap_ratio_vs_target": 11.481123751607434,
+      "mean_energy_drop": 14.985184055380524,
+      "plateau_rate": 0.0,
+      "wrong_context_rate": 0.0,
+      "divergence_rate": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "seed": 3,
+      "energy_probe_version": "RC2jh_energy_context_probe_audit_v1",
+      "run_mode": "robust",
+      "dataset_name": "CORe50",
+      "n_probe_samples": 40,
+      "oracle_hit_rate": 1.0,
+      "median_final_context_gap": 0.3022768050432205,
+      "mean_final_context_gap": 0.3550364319235086,
+      "median_gap_ratio_vs_target": 10.423338104938638,
+      "mean_energy_drop": 15.201197469234469,
+      "plateau_rate": 0.0,
+      "wrong_context_rate": 0.0,
+      "divergence_rate": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "seed": 4,
+      "energy_probe_version": "RC2jh_energy_context_probe_audit_v1",
+      "run_mode": "robust",
+      "dataset_name": "CORe50",
+      "n_probe_samples": 40,
+      "oracle_hit_rate": 1.0,
+      "median_final_context_gap": 0.6112334430217743,
+      "mean_final_context_gap": 0.6805931515991688,
+      "median_gap_ratio_vs_target": 21.077015276612904,
+      "mean_energy_drop": 15.824773106351495,
+      "plateau_rate": 0.0,
+      "wrong_context_rate": 0.0,
+      "divergence_rate": 0.0,
+      "success_rate": 1.0
+    }
+  ],
+  "limitations": [
+    "severe early-task collapse",
+    "zero-recall classes remain",
+    "selector-specific gain over RC1b not established",
+    "host specialization mixed with route collapse in seed 4",
+    "custom rather than standard CORe50 scenario",
+    "frozen train-union visual representation"
+  ]
+}

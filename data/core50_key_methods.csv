@@ -1,0 +1,9 @@
+label,method,final_avg_acc_mean,final_avg_acc_std,min_task_acc_mean,avg_forgetting_mean,min_class_acc_mean
+Selected RC2O,paired_rc2o_v1_feature_only_regime_hard_selector_policy,0.3149,0.0345457124691328,0.0145999999999999,0.1672777777777778,0.0
+Safe balanced readout,paired_context_gap_safe_class_balanced_readout_calibrated,0.3149,0.0345457124691328,0.0145999999999999,0.1661222222222222,0.0
+RC1b context-gap,paired_context_gap_selected,0.31084,0.0399346716525878,0.0129,0.1699555555555555,0.0
+Best replay,baseline_balanced_replay,0.27961,0.0125179071733257,0.0527,0.1789111111111111,0.0005
+Joint MLP control,baseline_joint_upper_bound,0.25083,0.0097500384614626,0.0602,0.0,0.0025
+ZF oracle probe,probe_proto__zf_oracle,0.36305,0.0453628013905667,0.1296,,0.007
+ZF proto probe,probe_proto__zf_proto,0.28967,0.0220574420547805,0.0116999999999999,,0.0005
+LwF,baseline_lwf,0.11431,0.0123838301829442,0.0,0.2527333333333333,0.0

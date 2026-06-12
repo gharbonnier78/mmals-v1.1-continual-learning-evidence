@@ -1,0 +1,11 @@
+label,method,family,final_avg_acc_mean,final_avg_acc_std,min_task_acc_mean,avg_forgetting_mean,min_class_acc_mean,class2_acc_mean,class5_acc_mean,model_size_mb_total_mean
+Selected RC2O,paired_rc2o_v1_feature_only_regime_hard_selector_policy,mmals_rc2b_policy,0.91395,0.0063869985126036,0.8535,0.0242499999999999,0.841,0.853,0.885,2.0107955932617188
+Safe readout,paired_context_gap_safe_class_balanced_readout_calibrated,mmals_rc2b_candidate,0.91385,0.0053636508089173,0.853,0.0238749999999999,0.843,0.8560000000000001,0.8925000000000001,2.0107955932617188
+RC1b guarded context gap,paired_context_temp_blend_selected_head_guard_035,mmals_rc2b_candidate,0.9097,0.0081420973956346,0.8470000000000001,0.0298125,0.8285,0.845,0.8625,2.0107955932617188
+ZF oracle probe,probe_proto__zf_oracle,probe,0.92345,0.0059329587896765,0.86775,,0.827,0.8855000000000001,0.8949999999999999,0.0024795532226562
+ZF proto probe,probe_proto__zf_proto,probe,0.92065,0.0086432777347485,0.86425,,0.8140000000000001,0.9145,0.8714999999999999,0.0024795532226562
+Best replay,baseline_balanced_replay,mlp_baseline,0.7386,0.0155890586630495,0.602,0.1920625,0.5665,0.6305,0.6745,0.3162002563476562
+Joint MLP control,baseline_joint_upper_bound,joint_upper_bound,0.75315,0.013166719409177,0.6245,0.0,0.5795,0.679,0.6335,0.3162002563476562
+LwF,baseline_lwf,mlp_baseline,0.2497999999999999,0.0299235484192633,0.038,0.003875,0.0005,0.0905,0.077,0.3162002563476562
+EWC,baseline_ewc,mlp_baseline,0.1899,0.0016450683876362,0.0,0.9345625,0.0,0.0,0.0,0.3162002563476562
+Finetune,baseline_finetune,mlp_baseline,0.1897,0.0017175564037317,0.0,0.930625,0.0,0.0,0.0,0.3162002563476562

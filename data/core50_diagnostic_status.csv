@@ -1,0 +1,9 @@
+criterion,score,verdict
+Execution validity,1.0,PASS
+Five-seed reproducibility,1.0,PASS
+Advantage over replay,0.75,MODEST PASS
+Selector-specific gain,0.2,NOT PROVEN
+Worst-task retention,0.0,FAIL
+Class coverage,0.0,FAIL
+Host specialization,0.35,MIXED
+Standard CORe50 protocol,0.0,NOT YET

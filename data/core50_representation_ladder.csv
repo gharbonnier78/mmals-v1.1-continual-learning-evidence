@@ -1,0 +1,10 @@
+stage_order,stage,metric,value,secondary_value,source,diagnostic_only,backbone_sanity_gates_passed,joint_upper_bound_floor,joint_upper_bound_passed,cl_interpretation
+1,task_union_feature_backbone_internal_val,feature_backbone_val_acc,0.7223935327943996,0.6453958333333333,FEATURE_BACKBONE_HISTORY_DF,True,False,0.65,False,representation still likely bottleneck; treat CL comparison as diagnostic
+2,supervised_cifar10_backbone_sanity_best_variant,val_acc_best,,,backbone_sanity_supervised,True,False,0.65,False,representation still likely bottleneck; treat CL comparison as diagnostic
+3,frozen_feature_linear_probe_sanity,val_acc_best,,,backbone_sanity_frozen_linear_probe,True,False,0.65,False,representation still likely bottleneck; treat CL comparison as diagnostic
+4,joint_upper_bound,final_avg_acc_mean,0.25083,,scorecard_df,False,False,0.65,False,representation still likely bottleneck; treat CL comparison as diagnostic
+5,zf_oracle_probe,probe_proto__zf_oracle,0.36305,,scorecard_df,True,False,0.65,False,representation still likely bottleneck; treat CL comparison as diagnostic
+6,rc2o_selected_policy,final_avg_acc_mean,0.3149,,scorecard_df,False,False,0.65,False,representation still likely bottleneck; treat CL comparison as diagnostic
+7,safe_readout_rescue_candidate,final_avg_acc_mean,0.3149,,scorecard_df,False,False,0.65,False,representation still likely bottleneck; treat CL comparison as diagnostic
+8,best_replay_baseline,baseline_balanced_replay,0.27961,,scorecard_df,False,False,0.65,False,representation still likely bottleneck; treat CL comparison as diagnostic
+9,best_validation_selected_baseline_or_upper_bound,baseline_experience_replay,0.27961,,scorecard_df,False,False,0.65,False,representation still likely bottleneck; treat CL comparison as diagnostic

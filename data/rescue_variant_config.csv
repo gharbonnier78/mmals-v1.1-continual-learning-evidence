@@ -1,0 +1,4 @@
+variant,prototype_mode,prototype_ema_old_weight,extra_task_replay_weight,oldest_task_boost,context_retention_weight,host_balance_weight,host_entropy_floor_ratio,dynamic_readout,proxy_repair,n_hosts,feature_dim,feature_epochs,dynamic_readout_weakness_weight,dynamic_readout_age_weight,dynamic_readout_kl_weight,dynamic_readout_epochs
+reference_v22c,refresh,0.0,0.0,1.0,0.0,0.0,0.0,False,False,5,128,4,,,,
+context_ema_retention,ema,0.9,0.75,2.0,0.75,0.0,0.0,False,False,5,128,4,,,,
+full_rescue,ema,0.9,1.0,2.5,1.0,0.05,0.55,True,True,10,256,8,2.0,1.0,0.2,8.0

@@ -1,0 +1,12 @@
+\begin{tabularx}{\linewidth}{@{}l l r r r X@{}}
+\toprule
+Dataset / branch & Protocol & Selected & Replay & Oracle & Status \\
+\midrule
+MNIST-family v0.9 & 5-task functional-memory diagnostic & 0.9908 & -- & -- & Route-only memory was insufficient; functional latent preservation was supported diagnostically. \\
+MNIST-family v0.12 & geometry / co-evolution diagnostic & 0.9889 & -- & -- & Very low forgetting, but no clear accuracy advantage of the geometry regularizer. \\
+SplitCIFAR10 v2.2c & 5 tasks $\times$ 2 classes, 5 seeds & 0.9140 & 0.7386 & 0.9235 & Robust external-bridge qualification over frozen visual features. \\
+SplitCIFAR100 v2.2c & 10 tasks $\times$ 10 classes, 5 seeds & 0.5356 & 0.3325 & 0.6551 & Positive robust diagnostic; representation/control gate not passed. \\
+CORe50 v2.2c & custom 10 tasks $\times$ 5 objects, 5 seeds & 0.3149 & 0.2796 & 0.3631 & Positive diagnostic; severe old-task and old-context collapse. \\
+CORe50 v2.3 & seeds 0 and 4, three rescue variants & 0.3171 & 0.2734 ref. & -- & Partial rescue: class and host collapse improved, oldest-context rescue failed. \\
+\bottomrule
+\end{tabularx}

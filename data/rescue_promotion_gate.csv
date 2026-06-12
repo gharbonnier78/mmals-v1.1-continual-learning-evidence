@@ -1,0 +1,3 @@
+variant,avg_acc_delta,min_task_delta,oldest2_delta,context_oldest2_delta,zero_recall_reduction,passed,decision
+context_ema_retention,0.023649999999999977,-0.004,-0.007124999999999999,-0.009999999776482582,-1.5,False,iterate_before_robust
+full_rescue,0.04370000000000002,0.04625,0.028624999999999998,-0.009999999776482582,8.5,False,iterate_before_robust

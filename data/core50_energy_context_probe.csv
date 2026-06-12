@@ -1,0 +1,6 @@
+seed,energy_probe_version,run_mode,dataset_name,n_probe_samples,oracle_hit_rate,median_final_context_gap,mean_final_context_gap,median_gap_ratio_vs_target,mean_energy_drop,plateau_rate,wrong_context_rate,divergence_rate,success_rate
+0,RC2jh_energy_context_probe_audit_v1,robust,CORe50,40,1.0,0.3149847239255905,0.4010683387517929,10.861542204330709,15.013458963483572,0.0,0.0,0.0,1.0
+1,RC2jh_energy_context_probe_audit_v1,robust,CORe50,40,1.0,0.3333968967199325,0.3514722514897584,11.496444714480432,14.848498145118356,0.0,0.0,0.0,1.0
+2,RC2jh_energy_context_probe_audit_v1,robust,CORe50,40,1.0,0.3329525887966156,0.3549517016857862,11.481123751607434,14.985184055380524,0.0,0.0,0.0,1.0
+3,RC2jh_energy_context_probe_audit_v1,robust,CORe50,40,1.0,0.3022768050432205,0.3550364319235086,10.423338104938638,15.201197469234469,0.0,0.0,0.0,1.0
+4,RC2jh_energy_context_probe_audit_v1,robust,CORe50,40,1.0,0.6112334430217743,0.6805931515991688,21.077015276612904,15.824773106351495,0.0,0.0,0.0,1.0

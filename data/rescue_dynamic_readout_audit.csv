@@ -1,0 +1,7 @@
+variant,seed,dynamic_readout_attempted,dynamic_readout_selected,base_proxy_score,base_proxy_global_acc,base_proxy_min_task,base_proxy_oldest2_acc,base_proxy_task_std,base_proxy_zero_classes,candidate_proxy_score,candidate_proxy_global_acc,candidate_proxy_min_task,candidate_proxy_oldest2_acc,candidate_proxy_task_std,candidate_proxy_zero_classes
+reference_v22c,0,False,False,,,,,,,,,,,,
+reference_v22c,4,False,False,,,,,,,,,,,,
+context_ema_retention,0,False,False,,,,,,,,,,,,
+context_ema_retention,4,False,False,,,,,,,,,,,,
+full_rescue,0,True,True,1.862870815119737,0.9603124856948853,0.8531250357627869,1.0,0.04658346016410011,0.0,1.8648469600635453,0.9603124856948853,0.856249988079071,1.0,0.046077592393912584,0.0
+full_rescue,4,True,False,1.8837629076931484,0.9640624523162842,0.8812500238418579,1.0,0.045247794641253794,0.0,1.8830486102946304,0.9634374976158142,0.8812500238418579,1.0,0.04569450813149246,0.0
